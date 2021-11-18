@@ -13,8 +13,8 @@ resource "spacelift_stack" "this" {
   autodeploy        = false
   branch            = "master"
   description       = "Testing workflow"
-  name              = "Spacelift-starter"
-  repository        = "spacelift-starter"
+  name              = "Spacelift"
+  repository        = "Spacelift-starter"
   terraform_version = "1.0.5"
 }
 
