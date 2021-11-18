@@ -21,7 +21,7 @@ resource "spacelift_stack" "this" {
 resource "spacelift_stack" "new" {
   administrative    = false
   autodeploy        = false
-  branch            = "master"
+  branch            = "main"
   description       = "Testing workflow"
   name              = "Another stack"
   repository        = "Spacelift"
