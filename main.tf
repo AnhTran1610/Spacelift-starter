@@ -18,6 +18,16 @@ resource "spacelift_stack" "this" {
   terraform_version = "1.0.5"
 }
 
+resource "spacelift_stack" "new" {
+  administrative    = false
+  autodeploy        = false
+  branch            = "master"
+  description       = "Testing workflow"
+  name              = "Another stack"
+  repository        = "Spacelift"
+  terraform_version = "1.0.5"
+}
+
 resource "spacelift_environment_variable" "stack-plaintext" {
   stack_id   = spacelift_stack.this.id
   name       = "TF_VAR_stack_public"
