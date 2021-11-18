@@ -1,11 +1,12 @@
 resource "spacelift_stack" "this" {
-  administrative    = false
+  administrative    = true
   autodeploy        = false
   branch            = "master"
   description       = "Testing workflow"
-  name              = "LAB DEMO"
-  repository        = "quick_lab"
+  name              = "Spacelift"
+  repository        = "Spacelift-starter"
   terraform_version = "1.0.5"
+  project_root = "."
 }
 
 resource "spacelift_environment_variable" "stack-plaintext" {
