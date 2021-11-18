@@ -9,7 +9,7 @@ terraform {
 }
 
 resource "spacelift_stack" "this" {
-  administrative    = true
+  administrative    = false
   autodeploy        = false
   branch            = "master"
   description       = "Testing workflow"
