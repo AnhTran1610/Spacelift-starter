@@ -1,4 +1,8 @@
-provider "spacelift" {}
+provider "spacelift" {
+  api_key_endpoint = "https://anhtran1610.app.spacelift.io/"
+  api_key_id = "01FM9H98R71Q0X3XE436QA8YFD"
+  api_key_secret = "023ee44c39a47fbe559e0d46cdd3cc42e7c3db38b6f8784cdaffc4c96a9d7e1b"
+}
 
 terraform {
   required_providers {
